@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:layout_insetEdge="bottom"
+    app:behavior_peekHeight="@dimen/peekHeight"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimaryBlue"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/headingLayout">
+
+
+        <TextView
+            android:id="@+id/swipeUpTextView"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:layout_marginEnd="@dimen/stdLayoutMargin"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/add_task"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/bottomSheetToggleButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/up_to_down"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="center"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editTextsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/stdLayoutPadding"
+        android:layout_margin="@dimen/stdLayoutMargin"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headingLayout">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/smallBtmEditTextMargin"
+            android:enabled="true"
+            android:hint="Task"
+
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/colorBlueDark"
+            app:startIconDrawable="@drawable/ic_assignment_turned"
+            app:startIconTint="@color/colorBlue">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/taskNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorBlack"                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/smallBtmEditTextMargin"
+            android:backgroundTint="@color/colorBlack"
+
+            android:enabled="true"
+            android:hint="Date"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/colorBlueDark"
+            app:startIconDrawable="@drawable/ic_date"
+
+            app:startIconTint="@color/colorBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/taskDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="datetime"
+                android:longClickable="false"
+                android:textColor="@color/colorBlack" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/smallBtmEditTextMargin"
+            android:backgroundTint="@color/colorBlack"
+
+            android:enabled="true"
+            android:hint="Time"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/colorBlueDark"
+            app:startIconDrawable="@drawable/ic_timer"
+
+            app:startIconTint="@color/colorBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/taskTimeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="datetime"
+                android:longClickable="false"
+                android:textColor="@color/colorBlack"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/smallBtmEditTextMargin"
+            android:enabled="true"
+
+            android:hint="Location"
+            app:endIconMode="clear_text"
+
+            app:errorEnabled="true"
+            app:hintTextColor="@color/colorBlueDark"
+            app:startIconDrawable="@drawable/ic_add_location_black_24dp"
+            app:startIconTint="@color/colorBlue"
+            app:helperTextEnabled="true"
+            app:helperText="Click to open Maps and Long Press to refresh"
+            app:helperTextTextColor="@color/colorBlueDark">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/taskLocationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tasks" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="112dp"
+                android:src="@drawable/rounded_corners" />
+
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addTaskFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:clickable="true"
+        app:elevation="30dp"
+        android:focusable="true"
+        android:foregroundGravity="center"
+        android:text="Hello World!"
+        android:tint="@color/colorWhite"
+        app:layout_dodgeInsetEdges="bottom"
+        app:rippleColor="@color/colorRipplePrimary"
+        app:srcCompat='@drawable/ic_add_24dp'
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/editTextsContainer"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.8"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    android:layout_width="150dp"-->
+    <!--    android:layout_height="125dp"-->
+
+
+    <!--<com.google.android.material.card.MaterialCardView-->
+    <!--android:id="@+id/editTextCard"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginStart="@dimen/stdLayoutMargin"-->
+    <!--android:layout_marginEnd="@dimen/stdLayoutMargin"-->
+    <!--app:cardCornerRadius="@dimen/stdCardRadius"-->
+    <!--app:cardElevation="30dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/headingLayout"-->
+    <!--    >-->
+    <!--</com.google.android.material.card.MaterialCardView>-->

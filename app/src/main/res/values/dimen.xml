@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonPaddingNormal">10dp</dimen>
+    <dimen name="textSizeSmall">20sp</dimen>
+    <dimen name="textSizeNormal">30sp</dimen>
+    <dimen name="textSizeLarge">40sp</dimen>
+    <dimen name="textPaddingNormal">10dp</dimen>
+<dimen name="drawablePadding">10dp</dimen>
+    <dimen name="peekHeight">100dp</dimen>
+    <dimen name="stdElevation">20dp</dimen>
+    <dimen name="stdCardRadius">20dp</dimen>
+    <dimen name="smallCardRadius">5dp</dimen>
+    <dimen name="smallIconSize">15dp</dimen>
+    <dimen name="taskNameTextSize">16dp</dimen>
+    <dimen name="taskDateTextSize">14sp</dimen>
+    <dimen name="taskTimeTextSize">14sp</dimen>
+    <dimen name="taskLocationTextSize">14sp</dimen>
+</resources>

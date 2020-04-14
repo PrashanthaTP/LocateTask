@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <color name="colorPrimaryBlue">#223DBB</color>
+    <color name="colorPrimaryDarkBlue">#112DE0</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPinkishRed1">#F31869</color>
+    <color name="colorPink">#EF0078</color>
+    <color name="colorRipple">#CECECE</color>
+    <color name="colorRipplePrimary">#42223DBB</color>
+    <color name="colorBlue">#1111D2</color>
+    <color name="colorBlueDark">#1111FF</color>
+    <color name="colorLightBlack">#FF2F2B2D</color>
+<color name="cardColorNew">#ABAAAA</color>
+    <color name="cardColor">#F6F6F6</color>
+
+    <color name="bottomNavIcon">@color/colorBlueDark</color>
+    <color name="bottomNavIconNotSelected">#6E6E6F</color>
+
+    <color name ="swipe_background">#556C6C6C</color>
+
+</resources>

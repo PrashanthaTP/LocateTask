@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stdLayoutMargin">16dp</dimen>
+    <dimen name="smallBtmEditTextMargin">3dp</dimen>
+    <dimen name="stdLayoutPadding">16dp</dimen>
+    <dimen name="smallLLayoutPadding">12dp</dimen>
+    <dimen name="smallLayoutMargin">12dp</dimen>
+</resources>

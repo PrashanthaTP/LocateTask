@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="6dp"
+    android:padding="12dp"
+    app:cardCornerRadius="@dimen/smallCardRadius"
+    app:cardElevation="50dp"
+    android:id="@+id/cardId">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/taskNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/tasks_image_small"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorBlack"
+            android:padding="@dimen/textPaddingNormal"
+            android:text="My Task"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/taskNameTextSize"
+            app:layout_constraintBottom_toTopOf="@id/taskDateTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/taskDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/calender_small_image"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorBlack"
+            android:padding="@dimen/textPaddingNormal"
+            android:text="Date"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/taskDateTextSize"
+            app:layout_constraintBottom_toTopOf="@id/taskTimeTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskNameTextView" />
+
+        <TextView
+            android:id="@+id/taskTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/timer_small_image"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorBlack"
+            android:padding="@dimen/textPaddingNormal"
+            android:text="Time"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/taskTimeTextSize"
+            app:layout_constraintEnd_toEndOf="@id/taskDateTextView"
+            app:layout_constraintStart_toStartOf="@id/taskDateTextView"
+            app:layout_constraintTop_toBottomOf="@id/taskDateTextView" />
+
+        <TextView
+            android:id="@+id/taskLocationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/location_small_image"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorBlack"
+            android:padding="@dimen/textPaddingNormal"
+            android:text="Location"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/taskLocationTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskTimeTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/viewBackground"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_margin="6dp"-->
+<!--        android:padding="12dp"-->
+<!--        app:cardBackgroundColor="@color/colorRipplePrimary">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/delete"-->
+<!--            android:textSize="@dimen/textSizeNormal"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:padding="20dp"-->
+<!--            android:drawableEnd="@drawable/ic_delete"-->
+<!--            android:drawableTint="@color/colorBlack"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            />-->
+<!--        -->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_margin="6dp"-->
+<!--        android:padding="12dp"-->
+<!--        app:cardCornerRadius="@dimen/smallCardRadius"-->
+<!--        app:cardElevation="50dp"-->
+<!--        android:id="@+id/cardId">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="5dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/taskNameTextView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableStart="@drawable/tasks_image_small"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableTint="@color/colorBlack"-->
+<!--                android:padding="@dimen/textPaddingNormal"-->
+<!--                android:text="My Task"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="@dimen/taskNameTextSize"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/taskDateTextView"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/taskDateTextView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:drawableStart="@drawable/calender_small_image"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableTint="@color/colorBlack"-->
+<!--                android:padding="@dimen/textPaddingNormal"-->
+<!--                android:text="Date"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="@dimen/taskDateTextSize"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/taskTimeTextView"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/taskNameTextView" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/taskTimeTextView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableStart="@drawable/timer_small_image"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableTint="@color/colorBlack"-->
+<!--                android:padding="@dimen/textPaddingNormal"-->
+<!--                android:text="Time"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="@dimen/taskTimeTextSize"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/taskDateTextView"-->
+<!--                app:layout_constraintStart_toStartOf="@id/taskDateTextView"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/taskDateTextView" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/taskLocationTextView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableStart="@drawable/location_small_image"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:drawableTint="@color/colorBlack"-->
+<!--                android:padding="@dimen/textPaddingNormal"-->
+<!--                android:text="Location"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="@dimen/taskLocationTextSize"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/taskTimeTextView" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+<!--</FrameLayout>-->
+

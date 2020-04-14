@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorRipplePrimary"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Welcome to LocateTask"
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorRipplePrimary"
+        android:gravity="start"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/smallBtmEditTextMargin"
+        android:enabled="true"
+        android:hint="Name"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_person"
+        app:startIconTint="@color/colorBlack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userNameEdiText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorBlack" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorRipplePrimary"
+        android:gravity="start"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startAppButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Lets start!"
+        app:elevation="15dp"
+        app:icon="@drawable/ic_arrow_forward" />
+
+</LinearLayout>
