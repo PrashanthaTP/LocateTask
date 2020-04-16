@@ -23,7 +23,9 @@ public class CustomAlarmHelper {
     private static  AlarmManager mAlarmManager;
     private static   Intent mIntent ;
 
-    private static final SimpleDateFormat  mDateFormat = new SimpleDateFormat("dd/MM/yyyy hh:mm", new Locale("en","IN"));
+
+    //===========HH for 24 hours format and hh for 12 hours format========================
+    private static final SimpleDateFormat  mDateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm", new Locale("en","IN"));
 //    private  static  final SimpleDateFormat mTimeFormat = new SimpleDateFormat("HH:mm",new Locale("en","IN"));
 
      CustomAlarmHelper(Context context, CustomTaskAttributesHelper taskAttributesHelper) {
