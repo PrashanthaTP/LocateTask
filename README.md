@@ -4,7 +4,8 @@
 Uses
 
 > 
-> - `Firebase - GeoFire`(an open-source library for Java that allows to store and query a set of keys based on their geographic location)
+> - `Firebase`
+> - `GeoFire`(an open-source library for Java that allows to store and query a set of keys based on their geographic location)
 > - `SQLite`
 >
 
