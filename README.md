@@ -5,7 +5,7 @@ Uses
 
 > 
 > - `Firebase`
-> - [`GeoFire1`!](https://github.com/firebase/geofire-android)(an open-source library for Java that allows to store and query a set of keys based on their geographic location)
+> - [`GeoFire`](https://github.com/firebase/geofire-android)(an open-source library for Java that allows to store and query a set of keys based on their geographic location)
 > - `SQLite`
 >
 
