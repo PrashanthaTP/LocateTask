@@ -1,5 +1,5 @@
 # LocateTask
-Android Application for managing tasks on the go.
+### Android Application for managing tasks on the go.
 
 Uses
 
